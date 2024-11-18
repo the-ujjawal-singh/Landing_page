@@ -1,0 +1,239 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('assets/photo.jpeg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+
+.menu a:hover::before {
+    width: 90%;
+}
+
+.register a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.register a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+.h-txt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.h-txt span {
+    letter-spacing: 5px;
+}
+
+.h-txt h1 {
+    font-size: 3.5em;
+}
+
+.h-txt a {
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+
+.h-txt a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+/* Home Section Styling */
+.home-section {
+    width: 100%;
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.home-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-section a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: indianred;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+
+.home-section a:hover {
+    background: transparent;
+    color: indianred;
+    border: 2px solid indianred;
+}
+
+.image{
+    float: left;
+    width: 30%;
+}
+
+.position{
+    position: absolute;
+    width: 10%;
+}
+
+/* Hill Stations Section Styling */
+.hill-stations-section {
+    width: 100%;
+    padding: 50px 20px;
+    background: #e8f4f8; /* Light blue background for a fresh, mountain feel */
+    text-align: center;
+}
+
+.hill-stations-section h2 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Deep blue for a strong contrast */
+    margin-bottom: 20px;
+}
+
+.hill-stations-section p {
+    font-size: 1.2em;
+    color: #34495e; /* Muted blue for readability */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.hill-stations-section img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background: indianred;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #a42c2c;
+}
+
+.contact-details {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+
